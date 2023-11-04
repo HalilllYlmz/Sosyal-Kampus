@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="#222222"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp">
+
+        <TextView
+            android:id="@+id/chatTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arialrounded"
+            android:text="Genel Sohbet"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chatLinear"
+        android:layout_below="@id/toolbar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp" />
+
+
+    <LinearLayout
+        android:id="@+id/chatLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/chatText"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:hint="Sohbete başla"
+            android:paddingStart="15dp"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="5dp"
+            android:background="@drawable/round"
+            android:backgroundTint="@color/textBackground"
+            android:fontFamily="@font/arialrounded"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/galleryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Galeri"
+            android:background="@drawable/round"
+            android:backgroundTint="#222222"
+            android:padding="10dp"
+            android:src="@drawable/baseline_image_24"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arialrounded"
+            android:layout_marginEnd="5dp"
+            android:textAllCaps="false" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gönder"
+            android:background="@drawable/round"
+            android:backgroundTint="#222222"
+            android:padding="10dp"
+            android:src="@drawable/baseline_send_24"
+            android:layout_gravity="center"
+            android:fontFamily="@font/arialrounded"
+            android:layout_marginEnd="5dp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>

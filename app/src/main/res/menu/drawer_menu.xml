@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item
+        android:id="@+id/profilesButton"
+        android:icon="@drawable/baseline_account_box_24"
+        android:title="Profiller" />
+
+    <item
+        android:id="@+id/notificationButton"
+        android:icon="@drawable/baseline_circle_notifications_24"
+        android:title="Duyurular" />
+
+    <item
+        android:id="@+id/projectsButton"
+        android:icon="@drawable/baseline_menu_book_24"
+        android:title="Proje Sergisi" />
+
+    <item
+        android:id="@+id/notificationShareButton"
+        android:icon="@drawable/baseline_notifications_active_24"
+        android:title="Duyuru Paylaş" />
+
+    <item
+        android:id="@+id/projectsShareButton"
+        android:icon="@drawable/baseline_note_add_24"
+        android:title="Proje Sergisi Paylaş" />
+
+    <item
+        android:id="@+id/userAcceptButton"
+        android:icon="@drawable/baseline_check_circle_24"
+        android:title="Kullanıcı Onayla" />
+
+
+    <item android:title="Sohbetler">
+        <menu>
+            <item
+                android:id="@+id/generalChat"
+                android:icon="@drawable/baseline_group_24"
+                android:title="Yazilim Mühendisliği 1. Sınıf" />
+
+            <item
+                android:id="@+id/studentChat"
+                android:icon="@drawable/baseline_group_24"
+                android:title="Yazilim Mühendisliği 2. Sınıf" />
+
+            <item
+                android:id="@+id/graduateChat"
+                android:icon="@drawable/baseline_group_24"
+                android:title="Yazilim Mühendisliği 3. Sınıf" />
+
+            <item
+                android:id="@+id/managerChat"
+                android:icon="@drawable/baseline_group_24"
+                android:title="Yazilim Mühendisliği 4. Sınıf" />
+
+        </menu>
+    </item>
+
+</menu>
